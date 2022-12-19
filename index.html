@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tic Tac Toe</title>
+</head>
+<body>
+    <!-- Creates the title on top of the page -->
+    <h1 class="center">Tic Tac Toe</h1>
+
+    <!-- creates the instructions -->
+    <h3 class="center"><em>*Players alternate who starts</em></h3>
+
+    <!-- creates the playing board -->
+    <div id="mainGrid">
+        <button id="topLeft" onclick="topL()"><img id="tlBTN" src="tttB.png"></button>
+        <button id="topMiddle" onclick="topM()"><img id="tmBTN" src="tttB.png"></button>
+        <button id="topRight" onclick="topR()"><img id="trBTN" src="tttB.png"></button>
+        <button id="middleLeft" onclick="midL()"><img id="mlBTN" src="tttB.png"></button>
+        <button id="middleMiddle" onclick="midM()"><img id="mmBTN" src="tttB.png"></button>
+        <button id="middleRight" onclick="midR()"><img id="mrBTN" src="tttB.png"></button>
+        <button id="bottomLeft" onclick="botL()"><img id="blBTN" src="tttB.png"></button>
+        <button id="bottomMiddle" onclick="botM()"><img id="bmBTN" src="tttB.png"></button>
+        <button id="bottomRight" onclick="botR()"><img id="brBTN" src="tttB.png"></button>
+    </div>
+
+    <!-- out puts the turn -->
+    <br>
+    <h1 id="turnCounter"></h1>
+    <br>
+
+    <!-- outputs the player scores -->
+    <h1 id="P1S"></h1><br>
+    <h1 id="P2S"></h1>
+
+    <!-- creates the reset button -->
+    <br>
+    <div id="btnContainer"><button onclick="restart()" id="restartBTN">Restart</button></div>
+    <br><br><br>
+
+    <!-- runs the js -->
+    <script src="play.js"></script>
+</body>
+</html>
